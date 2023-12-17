@@ -1,0 +1,5 @@
+Prediction,component 1,flag,username,timestamp
+NO SOLAR PANELS DETECTED,"{""path"":""gradio_cached_examples\\16\\component 1\\57a5103d0d011c4144b1\\image.png"",""url"":null,""size"":null,""orig_name"":""image.png"",""mime_type"":null}",,,2023-12-17 12:28:27.922607
+SOLAR PANELS DETECTED,"{""path"":""gradio_cached_examples\\16\\component 1\\a51ceddc916fcacdc91b\\image.png"",""url"":null,""size"":null,""orig_name"":""image.png"",""mime_type"":null}",,,2023-12-17 12:28:28.531049
+SOLAR PANELS DETECTED,"{""path"":""gradio_cached_examples\\16\\component 1\\cd6f09fbee48b02f77a6\\image.png"",""url"":null,""size"":null,""orig_name"":""image.png"",""mime_type"":null}",,,2023-12-17 12:28:29.005302
+SOLAR PANELS DETECTED,"{""path"":""gradio_cached_examples\\16\\component 1\\716d2ab9e3bd689ad7ed\\image.png"",""url"":null,""size"":null,""orig_name"":""image.png"",""mime_type"":null}",,,2023-12-17 12:28:29.467363
