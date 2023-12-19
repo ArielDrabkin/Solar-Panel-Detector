@@ -1,54 +1,51 @@
-Solar-Panel-Detector
+Solar-Panel-Detector 🛰️☀️
 ==============================
-
-An app that detects wheather a given address has a solar panel
-
+![](deployment/examples/spd-demo.gif)
+--------
+Overview
+------------
+The Solar-Panel-Detector is an innovative AI-driven tool designed to identify solar panels in satellite imagery. 
+Utilizing the state-of-the-art YOLOv8 object-detection model and various cutting-edge technologies, this project demonstrates how AI can be leveraged for environmental sustainability.
+--------
 Project Organization
 ------------
 
-    ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
     ├── README.md          <- The top-level README for developers using this project.
-    ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
-    │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-    │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
-    │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
-    │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-    │
+    ├── models             <- Trained and serialized models
+    ├── notebooks          <- Jupyter notebooks.
     ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
+    │   └── final model training results        <- Generated graphics and figures to be used in reporting
     │
+    ├── scripts             <- 
+    ├── training            <- 
     ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
     │                         generated with `pip freeze > requirements.txt`
     │
-    ├── src                <- Source code for use in this project.
-        ├── __init__.py    <- Makes src a Python module
-        │
-        ├── data           <- Scripts to download or generate data
-        │   └── make_dataset.py
-        │
-        ├── features       <- Scripts to turn raw data into features for modeling
-        │   └── build_features.py
-        │
-        ├── models         <- Scripts to train models and then use trained models to make
-        │   │                 predictions
-        │   ├── predict_model.py
-        │   └── train_model.py
-        │
-        └── visualization  <- Scripts to create exploratory and results oriented visualizations
-                └── visualize.py
-
+    ├── secret               <- Source code for use in this project.
 
 --------
+Key Technologies
+------------
+**Roboflow** 🤖: For data organization and preprocessing.  
+**Ultralytics** 🌊: Utilizing their open-source YOLOv8 model for accurate object detection.  
+**Google Colab** ♾️: For model training and evaluation.  
+**Lightning AI**⚡: Enhancing training efficiency.  
+**ClearML** 📉: For training management and performance analysis.  
+**Google Maps API** 🗺️: To acquire satellite imagery.  
+**Gradio** 🎢: Creating a user-friendly GUI.  
+**Hugging Face Spaces** 🤗: For deploying the application.  
+------------
+Application
+------------
+The Solar-Panel-Detector app analyzes satellite images to detect the presence of solar panels, serving both environmental research and the solar energy market. 
+It provides insights into potential areas for solar panel installation and aids in understanding the spread of solar energy usage.
+
+You can use the app in two ways:
+1. With the deployed GUI at https://huggingface.co/spaces/ArielDrabkin/Solar-Panel-Detector
+2. Clone the repository:
+``` 
+git clone
+```
+ and run the app locally with the following command:
 
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
