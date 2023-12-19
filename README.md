@@ -1,14 +1,12 @@
 Solar-Panel-Detector 🛰️☀️
 ==============================
-![](deployment/examples/spd-demo.gif)
+![](https://raw.githubusercontent.com/ArielDrabkin/Solar-Panel-Detector/master/deployment/examples/spd-demo.gif)
 --------
-Overview
-------------
+## Overview
 The Solar-Panel-Detector is an innovative AI-driven tool designed to identify solar panels in satellite imagery. 
 Utilizing the state-of-the-art YOLOv8 object-detection model and various cutting-edge technologies, this project demonstrates how AI can be leveraged for environmental sustainability.
 --------
-Project Organization
-------------
+## Project Organization
 
     ├── README.md          <- The top-level README for developers using this project.
     ├── models             <- Trained and serialized models
@@ -16,16 +14,16 @@ Project Organization
     ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
     │   └── final model training results        <- Generated graphics and figures to be used in reporting
     │
-    ├── scripts             <- 
-    ├── training            <- 
+    ├── scripts             <- Source code for various stages of the project
+    ├── training            <- Training code for the several experiments made and the final model training.
     ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
     │                         generated with `pip freeze > requirements.txt`
     │
     ├── secret               <- Source code for use in this project.
 
 --------
-Key Technologies
-------------
+## Key Technologies
+
 **Roboflow** 🤖: For data organization and preprocessing.  
 **Ultralytics** 🌊: Utilizing their open-source YOLOv8 model for accurate object detection.  
 **Google Colab** ♾️: For model training and evaluation.  
@@ -35,8 +33,8 @@ Key Technologies
 **Gradio** 🎢: Creating a user-friendly GUI.  
 **Hugging Face Spaces** 🤗: For deploying the application.  
 ------------
-Application
-------------
+## Application
+
 The Solar-Panel-Detector app analyzes satellite images to detect the presence of solar panels, serving both environmental research and the solar energy market. 
 It provides insights into potential areas for solar panel installation and aids in understanding the spread of solar energy usage.
 
