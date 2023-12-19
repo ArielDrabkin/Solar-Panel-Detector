@@ -1,11 +1,15 @@
 Solar-Panel-Detector 🛰️☀️
 ==============================
 ![](https://raw.githubusercontent.com/ArielDrabkin/Solar-Panel-Detector/master/deployment/examples/spd-demo.gif)
+
 --------
+
 ## Overview
 The Solar-Panel-Detector is an innovative AI-driven tool designed to identify solar panels in satellite imagery. 
 Utilizing the state-of-the-art YOLOv8 object-detection model and various cutting-edge technologies, this project demonstrates how AI can be leveraged for environmental sustainability.
+
 --------
+
 ## Project Organization
 
     ├── README.md          <- The top-level README for developers using this project.
@@ -32,7 +36,8 @@ Utilizing the state-of-the-art YOLOv8 object-detection model and various cutting
 **Google Maps API** 🗺️: To acquire satellite imagery.  
 **Gradio** 🎢: Creating a user-friendly GUI.  
 **Hugging Face Spaces** 🤗: For deploying the application.  
-------------
+
+--------
 ## Application
 
 The Solar-Panel-Detector app analyzes satellite images to detect the presence of solar panels, serving both environmental research and the solar energy market. 
@@ -47,3 +52,5 @@ git clone
  and run the app locally with the following command:
 
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+
+--------
