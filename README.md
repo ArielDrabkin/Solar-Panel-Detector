@@ -43,14 +43,30 @@ Utilizing the state-of-the-art YOLOv8 object-detection model and various cutting
 The Solar-Panel-Detector app analyzes satellite images to detect the presence of solar panels, serving both environmental research and the solar energy market. 
 It provides insights into potential areas for solar panel installation and aids in understanding the spread of solar energy usage.
 
-You can use the app in two ways:
-1. With the deployed GUI at https://huggingface.co/spaces/ArielDrabkin/Solar-Panel-Detector
-2. Clone the repository:
-``` 
-git clone
-```
- and run the app locally with the following command:
+If you would like to use the app with the deployed GUI you can visit:
+https://huggingface.co/spaces/ArielDrabkin/Solar-Panel-Detector
 
+To run the solar panel detector locally: 
+1. clone the repository with the following command:       
+``` 
+git clone https://github.com/ArielDrabkin/Solar-Panel-Detector.git
+```
+2. Install the required packages with the following command:
+```
+pip install -r requirements.txt
+```
+### Predicting an address
+If you want to use the predictor to predict on an address you will need to get a Google Maps API key at https://developers.google.com/maps/documentation/maps-static/get-api-key.
+Once you have the key you will need to replace the placeholder key and update it in the secret.json file.
+then you can run the main.py file with the desired address.
+
+### Predicting on a local image
+If you want to use the predictor to predict on a local image you will need to run the Predict.py file with the desired image path.
+```
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
 
 --------
+## References
+
+--------
+## Aknowledgements

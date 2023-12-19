@@ -1,11 +1,9 @@
 from ultralytics import YOLO
 from PIL import Image
-import sys
 
-# Add models directory
-sys.path.append('models')
-model = YOLO('final-mosaic-augmentation.pt')
-
+# Load the model
+model_path = '../models/final-mosaic-augmentation.pt'
+model = YOLO(model_path)
 
 def plot_results(im_array, save_image=False, img_path="results.jpg"):
     """
@@ -50,3 +48,26 @@ def solar_panel_predict(image, conf=0.5):
             prediction = "SOLAR PANELS DETECTED"
         return prediction, im
 
+def image_predction(image_path):
+    """
+    Loads an image from a specified path, performs solar panel prediction on it, and displays the results.
+
+    This function opens an image from the given path, predicts the presence of solar panels using the
+    solar_panel_predict function, and then displays the image along with the prediction result.
+
+    Args:
+    image_path (str): The file path of the image on which to perform the solar panel prediction.
+
+    Note:
+    The function currently has a hardcoded image path, which should be replaced with the 'image_path' argument
+    for dynamic functionality.
+    """
+    image_path = "H:\My Drive\my computer\Data Science\solar-panel-detector2\deployment\examples\Ceske-Budejovice.jpg"
+    image = Image.open(image_path)
+    prediction,im =  solar_panel_predict(image, conf=0.5)
+    im.show()
+    print(prediction)
+
+if __name__ == '__main__':
+    image_path = "H:\My Drive\my computer\Data Science\solar-panel-detector2\deployment\examples\Ceske-Budejovice.jpg"
+    image_predction(image_path)
