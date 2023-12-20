@@ -120,13 +120,12 @@ python main.py --api_key "YOUR_CUSTOM_API_KEY" --address "1600 Pennsylvania Aven
 ```
 
 7. **Predicting with Image Analysis:**  
-   To perform image analysis on a specific image, use the -i or --image_dir argument:
+To perform image analysis on a specific image, ensure that the specified directory contains the image you want to analyze.
+use the -i or --image_dir argument:
 
 ```
 python main.py --image_dir "/path/to/image/directory"
 ```
-
-Ensure that the specified directory contains the images you want to analyze.
 
 8. **Predict and Enjoy!**    
 
