@@ -135,10 +135,10 @@ python main.py --image_dir "/path/to/image/directory"
 
 ## Training
 
-For using the data set for retraining a model you will need to get a secret key from roboflow where the data is stored
-and then
-update the secret.json file with the key and run the following code:
-
+For using the data-set for retraining a model: 
+1. Get a secret key from roboflow where the data is stored.
+2. Update the secret.json file with the key.
+3. Run the following code:
 ```
 # Load the data sets from roboflow
 with open("secret.json") as file:
