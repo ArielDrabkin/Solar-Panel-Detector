@@ -104,7 +104,7 @@ pip install -r requirements.txt
    at https://developers.google.com/maps/documentation/maps-static/get-api-key.
 
 5. **Predicting Using Address Only:**  
-   To get predictions based on an address, first update your Google Maps API key in the "secret.json" file
+   To get predictions based on an address, first update your Google Maps API key in the "secret.json" file.  
    Then use the -a or --address argument:
 
 ```
@@ -120,8 +120,7 @@ python main.py --api_key "YOUR_CUSTOM_API_KEY" --address "1600 Pennsylvania Aven
 ```
 
 7. **Adjusting Zoom Level:**
-   Zoom level is set to 19 by default, but can be adjusted according to your needs. for more information
-   visit https://developers.google.com/maps/documentation/maps-static/start#Zoomlevels.  
+   Zoom level is set to 19 by default, but can be adjusted according to your needs. For more information visit https://developers.google.com/maps/documentation/maps-static/start#Zoomlevels.  
    To adjust the zoom level of the image, use the -z or --zoom argument:
 
 ```
@@ -137,7 +136,7 @@ python main.py --address "1600 Pennsylvania Avenue NW, Washington, United States
 python main.py --image_dir "/path/to/image/directory"
 ```
 
-8. **Predict and Enjoy!**
+9. **Predict and Enjoy!**
 
 ![](https://media2.giphy.com/media/l5D4Zr95KJdUd1E7jt/200.gif?cid=82a1493bvrrr37gb80ycpjqds92n6ybwud9ebiebre854ocw&ep=v1_gifs_related&rid=200.gif&ct=g)
 
