@@ -6,7 +6,7 @@ Solar-Panel-Detector 🛰️☀️
 
 ## Overview
 
-The Solar-Panel-Detector is an innovative AI-driven tool designed to identify solar panels in satellite imagery.
+The Solar-Panel-Detector is an innovative AI-driven tool designed to identify solar panels in satellite imagery.  
 Utilizing the state-of-the-art YOLOv8 object-detection model and various cutting-edge technologies, this project
 demonstrates how AI can be leveraged for environmental sustainability.
 
@@ -98,7 +98,7 @@ pip install -r requirements.txt
 * -a, --address: (Optional) Address for prediction.
 * -z, --zoom: (Optional) Image Zoom level, default is 19.
 * -i, --image_dir: (Optional) Directory of images for applying predictions.
-  Once you are predicting on an address the predicted image will automatically be saved in the "src" folder.
+* Once you are predicting on an address the predicted image will show up and automatically be saved in the "src" folder.
 
 4. To predict on an address, first you will need to get a Google Maps API key
    at https://developers.google.com/maps/documentation/maps-static/get-api-key.
@@ -119,15 +119,25 @@ python main.py --address "1600 Pennsylvania Avenue NW, Washington, United States
 python main.py --api_key "YOUR_CUSTOM_API_KEY" --address "1600 Pennsylvania Avenue NW, Washington, United States"
 ```
 
-7. **Predicting with Image Analysis:**  
-To perform image analysis on a specific image, ensure that the specified directory contains the image you want to analyze.
-use the -i or --image_dir argument:
+7. **Adjusting Zoom Level:**
+   Zoom level is set to 19 by default, but can be adjusted according to your needs. for more information
+   visit https://developers.google.com/maps/documentation/maps-static/start#Zoomlevels.  
+   To adjust the zoom level of the image, use the -z or --zoom argument:
+
+```
+python main.py --address "1600 Pennsylvania Avenue NW, Washington, United States" --zoom 18
+```
+
+8. **Predicting with Image Analysis:**  
+   To perform image analysis on a specific image, ensure that the specified directory contains the image you want to
+   analyze.
+   use the -i or --image_dir argument:
 
 ```
 python main.py --image_dir "/path/to/image/directory"
 ```
 
-8. **Predict and Enjoy!**    
+8. **Predict and Enjoy!**
 
 ![](https://media2.giphy.com/media/l5D4Zr95KJdUd1E7jt/200.gif?cid=82a1493bvrrr37gb80ycpjqds92n6ybwud9ebiebre854ocw&ep=v1_gifs_related&rid=200.gif&ct=g)
 
@@ -135,10 +145,12 @@ python main.py --image_dir "/path/to/image/directory"
 
 ## Training
 
-For using the data-set for retraining a model: 
+For using the data-set:
+
 1. Get a secret key from roboflow where the data is stored.
-2. Update the secret.json file with the key.
+2. Update the secret.json file or the direct code with your key.
 3. Run the following code:
+
 ```
 # Load the data sets from roboflow
 with open("secret.json") as file:
