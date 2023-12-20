@@ -78,7 +78,7 @@ https://huggingface.co/spaces/ArielDrabkin/Solar-Panel-Detector
 
 ## Usage
 
-To run the solar panel detector locally:
+To run the solar panel detector locally -
 
 1. clone the repository with the following command:
 
@@ -128,8 +128,9 @@ python main.py --image_dir "/path/to/image/directory"
 
 Ensure that the specified directory contains the images you want to analyze.
 
-8. Predict and Enjoy  
-   ![](https://media2.giphy.com/media/l5D4Zr95KJdUd1E7jt/200.gif?cid=82a1493bvrrr37gb80ycpjqds92n6ybwud9ebiebre854ocw&ep=v1_gifs_related&rid=200.gif&ct=g)
+8. **Predict and Enjoy!**    
+
+![](https://media2.giphy.com/media/l5D4Zr95KJdUd1E7jt/200.gif?cid=82a1493bvrrr37gb80ycpjqds92n6ybwud9ebiebre854ocw&ep=v1_gifs_related&rid=200.gif&ct=g)
 
 --------
 
