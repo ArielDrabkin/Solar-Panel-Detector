@@ -100,7 +100,7 @@ pip install -r requirements.txt
 * -i, --image_dir: (Optional) Directory of images for applying predictions.
   Once you are predicting on an address the predicted image will automatically be saved in the "src" folder.
 
-4. To predict on an address, first If you will need to get a Google Maps API key
+4. To predict on an address, first you will need to get a Google Maps API key
    at https://developers.google.com/maps/documentation/maps-static/get-api-key.
 
 5. **Predicting Using Address Only:**  
