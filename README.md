@@ -16,16 +16,37 @@ demonstrates how AI can be leveraged for environmental sustainability.
 
     ├── README.md          <- The top-level README for developers using this project.
     ├── models             <- Trained and serialized models
+    │   └── copy_paste-augmentation.pt     
+    │   └── final-mosaic-augmentation.pt  
+    │   └── mixup-augmentation.pt          
+    │   └── mosaic-and-mixup-0.8-0.2-augmentation.pt     
+    │   └── mosaic-augmentation.pt 
+    │   └── NO-augmentation.pt
     ├── notebooks          <- Jupyter notebooks.
+    │   └── Error Analysis.ipynb
     ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
     │   └── final model training results        <- Generated graphics and figures to be used in reporting
-    │
-    ├── scripts             <- Source code for various stages of the project
+    ├── src             <- Source code for various stages of the project
+    │   └── retrive_satellite_imgae.py        <- Script for obtaining satellite image for a given address
+    │   └── Predict.py                        <- Script for predicting with the trained model on a given image
+    │   └── main.py                            <- Script for running the application
     ├── training            <- Training code for the several experiments made and the final model training.
+    │   └── copy_paste-augmentation-training.ipynb
+    │   └── final-mosaic-augmentation-training.ipynb
+    │   └── mixup-augmentation-training.ipynb
+    │   └── mosaic-and-mixup-0.8-0.2-augmentation-training.ipynb     
+    │   └── mosaic-augmentation-training.ipynb
+    │   └── NO-augmentation-training.ipynb
+    ├── deployment               <- Deployment code for the application as it was dep;oyed on Hugging Face Spaces.
+    │   └── examples       <- Examples of images for the application use.
+    │   └── README.md          <- The HuggingFace Space built-in README for developers using this project.
+    │   └── detector.pt        <- The trained model for the application.
+    │   └── requirements.txt   <- The requirements file for deploying the application.
+    │   └── SolarPanelDetector.py   <- The script that holds the functionality of the application.
+    │   └── app.py   <- The script that runs the application.
     ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
     │                         generated with `pip freeze > requirements.txt`
-    │
-    ├── secret               <- Source code for use in this project.
+    ├── secret               <- Secterkeys for use in this project.
 
 --------
 
@@ -76,8 +97,8 @@ pip install -r requirements.txt
   Once you are predicting on an address the predicted image will automatically be saved in the "src" folder.
 
 4.  To predict on an address, first If you will need to get a Google Maps API key
-at https://developers.google.com/maps/documentation/maps-static/get-api-key.
-
+at https://developers.google.com/maps/documentation/maps-static/get-api-key.  
+  
 5. Predicting Using Address Only:
    To get predictions based on an address, first update your Google Maps API key in the "secret.json" file
    Then use the -a or --address argument:
@@ -101,8 +122,20 @@ python main.py --api_key "YOUR_CUSTOM_API_KEY" --address "1600 Pennsylvania Aven
 python main.py --image_dir "/path/to/image/directory"
 ```
 Ensure that the specified directory contains the images you want to analyze.
-7. Predict and Enjoy
+7. Predict and Enjoy  
 ![](https://media2.giphy.com/media/l5D4Zr95KJdUd1E7jt/200.gif?cid=82a1493bvrrr37gb80ycpjqds92n6ybwud9ebiebre854ocw&ep=v1_gifs_related&rid=200.gif&ct=g)
+--------
+## Training
+For using the data set for retraining a model you will need to get a secret key from roboflow where the data is stored and then
+update the secret.json file with the key and run the following code:
+```
+# Load the data sets from roboflow
+with open("secret.json") as file:
+    roboflow_api_key = json.load(file)["roboflow_api_key"]
+rf = Roboflow(api_key=roboflow_api_key)
+project = rf.workspace("ariel-drabkin-tifqg").project("solar-panel-detector-imvoh")
+dataset = project.version(1).download("yolov8")
+```
 --------
 
 ## References
