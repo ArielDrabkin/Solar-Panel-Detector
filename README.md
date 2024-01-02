@@ -8,7 +8,8 @@ Solar-Panel-Detector 🛰️☀️
 
 The Solar-Panel-Detector is an innovative AI-driven tool designed to identify solar panels in satellite imagery.  
 Utilizing the state-of-the-art YOLOv8 object-detection model and various cutting-edge technologies, this project
-demonstrates how AI can be leveraged for environmental sustainability.
+demonstrates how AI can be leveraged for environmental sustainability. Try the application at https://huggingface.co/spaces/ArielDrabkin/Solar-Panel-Detector
+or you can run it locally by following the instructions below.
 
 --------
 
